@@ -1,0 +1,216 @@
+/*HOME*/
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#fitness-banner {
+	background-image: url(../images/home.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 670px;
+	position: relative;
+}
+
+.bg-overlay {
+	background: #171819;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+}
+
+#banner-text {
+	color: #ffffff;
+	position: absolute;
+	width: 100%;
+	padding-top: 100px;
+	text-align: center;
+}
+
+#banner-text h1 {
+	font-size: 3.5em;
+	padding-bottom: 30px;
+}
+
+#banner-text h6 {
+	margin: 0;
+	color: #d1d0d0;
+	font-size: 28px;
+}
+
+#banner-text a {
+	border: 1px solid #f13a11;
+	padding: 16px;
+	color: #f13a11;
+	text-decoration: none;
+	font-weight: bold
+}
+
+#banner-text a:hover,
+#banner-text a:active {
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+#banner-text h2 {
+	padding-top: 120px;
+	color: #d1d0d0;
+}
+
+#banner-text h3 {
+	padding: .01em 6em;
+	color: #d1d0d0;
+}
+
+#our-trainings {
+	padding: 2em 10em;
+}
+
+h2 {
+	text-align: center;
+	font-weight: bold;
+}
+
+#our-trainings h2 {
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+#trainings {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+#our-trainings .session {
+	max-width: 25%;
+	height: auto;
+	background-position: center;
+	background-size: cover;
+	color: #ffffff;
+	text-align: center;
+}
+
+#our-trainings .session:hover {
+	transform: scale(1.05);
+}
+
+#fitness {
+	background-image: url(../images/fitness.png);
+}
+
+#body-building {
+	background-image: url(../images/body-building.png);
+}
+
+#yoga {
+	background-image: url(../images/yoga.png);
+}
+
+#boxing {
+	background-image: url(../images/boxing.png);
+}
+
+#trainings h3 {
+	padding-top: 450px;
+}
+
+#trainings p {
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#trainings a {
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#trainings a:hover {
+	background-color: #ffffff;
+}
+
+#feature {
+	background-color: #171819;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+#feature h3 {
+	padding-bottom: 20px;
+}
+
+#feature a {
+	padding: 14px 24px;
+	background: #f13a11;
+}
+
+#feature a:hover,
+#feature a:active {
+	background: #ffffff;
+	color: #f13a11;
+}
+
+
+
+#covid {
+	background-color: #AD0000;
+	height: 25px;
+	font-size: 1.3em;
+	text-align: center;
+	color: #F7F7F7;
+}
+
+
+
+#covid a {
+	text-decoration: underline !important;
+	color: white;
+}
+
+@media (max-width: 768px) {
+	#fitness-banner h1 {
+		font-size: 2.5em;
+	}
+	#fitness-banner h6 {
+		font-size: 22px;
+	}
+	#banner-text a {
+		padding: 12px;
+	}
+	#banner-text h2 {
+		font-size: 1.2em;
+	}
+	#banner-text h3 {
+		padding: 0 .15em;
+		font-size: 1.01em;
+	}
+	#trainings {
+		display: block;
+		flex-direction: column;
+	}
+	#our-trainings {
+		padding: 2em 2em;
+	}
+	#our-trainings .session {
+		max-width: 100%;
+		height: 400px;
+		background-size: cover;
+	}
+	#trainings h3 {
+		padding-top: 200px;
+	}
+}
+

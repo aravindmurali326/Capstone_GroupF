@@ -1,0 +1,159 @@
+/*main*/
+body {
+	margin: 0;
+}
+.price-divider {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
+
+#equip {
+	width: 100%;
+	height: auto;
+    display: block;
+
+}
+
+#image_label {
+	position: absolute;
+	top: 47%;
+	left: 46%;
+	color: white;
+	font-size: 1.7em;
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+h5,h3,.para{
+	text-align: center;
+	margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+	text-align: center;
+}
+
+.price-text {
+	font-size: 0.5em;
+}
+
+.price-list {
+	background-color: white;
+	text-align: center;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	line-height: 1.75;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	margin-top: 16px;
+	font-size: 16px;
+	color: #434345;
+}
+
+.price-container .price-list li {
+	border-bottom: 1px solid #f5f5f5;
+	padding-bottom: 6px;
+}
+
+.price-container {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: white;
+	padding: 5px;
+	margin: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.text-gray {
+	color: #9b9b9b;
+}
+
+.btn,
+.btn1 {
+	box-sizing: border-box;
+	font: inherit;
+	margin: 0;
+	overflow: visible;
+	text-align: center;
+	border: 1px solid transparent;
+	display: block;
+	width: 100%;
+	font-weight: 700;
+	border-width: 2px;
+	color: #2b2c33;
+	background-color: transparent;
+	border-color: red;
+	padding: 15px 33px;
+	font-size: 15px;
+	border-radius: 50px;
+	margin-bottom: 0;
+	margin-top: 23px;
+	text-decoration: none;
+	color: red;
+}
+
+.btn1 {
+	width: 30%;
+}
+
+.btn:hover,
+a.btn1:hover,
+.btn:active {
+	background-color: red;
+	color: white;
+}
+
+
+.price-plan {
+	background-color: white;
+	color: #000;
+	font-size: 35px;
+	padding: 20px;
+	margin: 10px;
+	box-shadow: 0px 4px #fff, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.price-free {
+	background-color: white;
+	padding: 5px;
+	margin: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+	.price-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.btn1 {
+		width: 100%;
+	}
+	#image_label {
+		position: absolute;
+		top: 44%;
+		left: 37%;
+	}
+    #equip {
+	height: 185px;
+    }
+
+}
+
+

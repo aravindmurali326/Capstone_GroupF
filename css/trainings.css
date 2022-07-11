@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+}
+
+
+.training-contents {
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1020px;
+    margin-top: 100px;
+}
+
+.training-cross,
+.training-yoga,
+.training-fitness,
+.training-boxing,
+.training-bodybuilding,
+.training-workout {
+    width: 280px;
+	border: 10px solid rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	padding-bottom: 10px;
+	box-shadow: 2px 2px 14px 18px rgba(0, 0, 0, 0.9);
+}
+
+.training-boxing,
+.training-bodybuilding,
+.training-workout {
+    
+    margin-top: 50px;
+}
+
+.training-contents img {
+	height: 200px;
+	width: 280px;
+}
+
+.training-contents img:hover {
+	transform: scale(1.2);
+}
+
+#training-head {
+	background-image: url(../images/fitness_bg.jpeg);
+	background-position: center;
+	text-align: center;
+	background-size: cover;
+    height: 285px;
+}
+
+#training-head h1 {
+	background: rgba(0, 0, 0, 0.9);
+	color: #ffffff;
+	font-size: 1.7em;
+	margin-top: 10%;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#training-video {
+	text-align: center;
+	margin: 50px auto;
+}
+
+.training-contents h3 {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.training-contents h5 {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.training-contents h4 {
+	color: red;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.training-contents p {
+	text-align: center;
+	font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+       #training-head {
+    height: 185px;
+}
+    .training-cross,
+    .training-yoga{
+         margin-bottom: 50px;
+        
+    }
+    
+}
+

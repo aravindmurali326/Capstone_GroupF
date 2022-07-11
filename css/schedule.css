@@ -1,0 +1,97 @@
+/*table*/
+
+.table-tagline {
+	color: #000;
+	text-align: center;
+	margin-top: 2rem;
+	font-weight: 100;
+	font-size: 1.7rem;
+	position: relative;
+}
+
+.table-title {
+	color: #000;
+	text-align: center;
+	position: relative;
+	margin-bottom: .5rem;
+	font-size: 1.6rem;
+	font-weight: 500;
+	animation: mymove 2s;
+}
+
+@keyframes mymove {
+	from {
+		bottom: 50px;
+	}
+	to {
+		bottom: 0px;
+	}
+}
+
+.table {
+	text-align: center;
+	background-color: #000;
+	color: white;
+	margin: auto;
+	margin-bottom: 1.5rem;
+	border-collapse: collapse;
+}
+
+.table td,
+.table th {
+	padding: 20px;
+	border: 1px solid grey;
+	text-align: center;
+	font-size: 16px;
+}
+
+.table th {
+	background-color: red;
+	color: #ffffff;
+}
+
+.time {
+	background-color: red;
+	color: #ffffff;
+}
+
+thead {
+	padding: 1rem;
+}
+
+.table td span {
+	display: block;
+	color: gray;
+}
+
+
+@media (max-width: 768px) {
+	.table thead {
+		display: none;
+	}
+	.table,
+	.table tbody,
+	.table tr,
+	.table td {
+		display: block;
+	}
+	.table tr {
+		margin-bottom: 15px;
+	}
+	.table td {
+		text-align: right;
+		padding: 20px;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before {
+		content: attr(data-label);
+		position: absolute;
+		left: 20px;
+		width: 50%;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
