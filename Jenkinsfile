@@ -10,7 +10,7 @@ pipeline {
               sh 'cp -r /var/lib/jenkins/workspace/Testgitclone/* .'
               sh 'pwd'  
               sh "ls -la "
-              //sh "aws s3 cp ~/* s3://my-static-website-cbd3384 --recursive"
+              sh "aws s3 cp -r * s3://my-static-website-cbd3384"
             }
         }
     }
