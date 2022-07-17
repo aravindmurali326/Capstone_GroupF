@@ -12,6 +12,7 @@ pipeline {
               sh "ls -la "
               //sh "aws s3 cp ./* s3://my-static-website-cbd3384 --recursive"
               sh "aws s3 sync /var/lib/jenkins/workspace/jenkins-S3 s3://my-static-website-cbd3384"
+              echo "All done"
             }
         }
     }
