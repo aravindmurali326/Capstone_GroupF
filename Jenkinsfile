@@ -1,7 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage('deploy') {
+        stage('Build from Github') {
+            steps {
+              echo "Pulling code from Github"
+            }
+        }
+        stage('Test in Jenkins') {
+            steps {
+              echo "Test Looks good!!!"
+            }
+        }
+        stage('deploy to S3') {
             steps {
               sh "aws configure set region $AWS_DEFAULT_REGION" 
               sh "aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID"  
