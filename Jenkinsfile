@@ -4,15 +4,18 @@ pipeline {
         stage('Build from Github') {
             steps {
               echo "Pulling code from Github"
+              sh "sleep 5"  
             }
         }
         stage('Test in Jenkins') {
             steps {
               echo "Test Looks good!!!"
+              sh "sleep 3" 
             }
         }
         stage('deploy to S3') {
             steps {
+              sh "sleep 3" 
               sh "aws configure set region $AWS_DEFAULT_REGION" 
               sh "aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID"  
               sh "aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY"
